@@ -6,7 +6,7 @@
 
 * Loader.py : 데이터 로드
 * Model.py  : GNN 모델
-* Run.py        : 실행하는 프로그램
+* Run.py    : 실행하는 프로그램
 
 ## 데이터
 
