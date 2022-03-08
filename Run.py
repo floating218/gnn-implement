@@ -86,14 +86,14 @@ if __name__=="__main__":
     sample_data = run.test_data.paper_id.iloc[:5]
     def display_class_probabilities(probabilities):
         for instance_idx, probs in enumerate(probabilities):
+            print()
             print(f"Instance {instance_idx + 1}:")
             for class_idx, prob in enumerate(probs):
                 print(f"- {class_values[class_idx]}: {round(prob * 100, 2)}%")
     
 
     logits = gnn_model.predict(tf.constant(sample_data))
-    print('logits', logits)
     probabilities = keras.activations.softmax(tf.convert_to_tensor(logits)).numpy()
-    print("sample data : ",sample_data)
+    print("sample test data : ",tf.constant(sample_data))
     display_class_probabilities(probabilities)
     

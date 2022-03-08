@@ -30,6 +30,58 @@ python Run.py --epochs 100 --batch_size 256 --lr 0.01 --dropout_rate 0.5
 python Run.py --epochs 10 --batch_size 32
 ```
 
+- 결과: 샘플 테스트 데이터 결과를 프린트
+
+```
+sample test data :  tf.Tensor([1541   72 1250 2175 1756], shape=(5,), dtype=int64)
+
+Instance 1:
+- Case_Based: 0.02%
+- Genetic_Algorithms: 0.01%
+- Neural_Networks: 96.02%
+- Probabilistic_Methods: 3.7%
+- Reinforcement_Learning: 0.01%
+- Rule_Learning: 0.0%
+- Theory: 0.24%
+
+Instance 2:
+- Case_Based: 0.29%
+- Genetic_Algorithms: 0.15%
+- Neural_Networks: 1.22%
+- Probabilistic_Methods: 0.57%
+- Reinforcement_Learning: 0.07%
+- Rule_Learning: 2.97%
+- Theory: 94.74%
+
+Instance 3:
+- Case_Based: 0.3%
+- Genetic_Algorithms: 98.44%
+- Neural_Networks: 0.29%
+- Probabilistic_Methods: 0.07%
+- Reinforcement_Learning: 0.86%
+- Rule_Learning: 0.03%
+- Theory: 0.02%
+
+Instance 4:
+- Case_Based: 0.08%
+- Genetic_Algorithms: 0.03%
+- Neural_Networks: 0.84%
+- Probabilistic_Methods: 0.32%
+- Reinforcement_Learning: 0.01%
+- Rule_Learning: 0.65%
+- Theory: 98.06%
+
+Instance 5:
+- Case_Based: 0.01%
+- Genetic_Algorithms: 0.04%
+- Neural_Networks: 99.69%
+- Probabilistic_Methods: 0.12%
+- Reinforcement_Learning: 0.02%
+- Rule_Learning: 0.01%
+- Theory: 0.11%
+```
+
+
 ## update
 
 * Last Update Date: 2022/03/
