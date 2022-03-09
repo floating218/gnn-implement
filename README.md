@@ -90,8 +90,15 @@ Instance 5:
 ## 도식
 
 ### Graph convolution layer
+- 노드특성(또는 이미 차원 축소된 임베딩) + 엣지정보(기준노드-이웃노드 형식) + 엣지점수를 인풋으로 받음
+- 이웃 노드의 노드특성과 엣지점수를 합해서 이웃 노드별 임베딩을 도출함
+- 기준 노드의 특성과, 해당 노드의 이웃 노드의 임베딩을 집계한 것을 concat
+- 기준 노드에 대해 임베딩을 도출함
 <img src='notebook/conv.png' >
 
 ### Graph Neural Network
+- 노드특성을 차원 축소한 임베딩을 준비
+- 노드특성+엣지정보+엣지점수를 가지고 conv 레이어, skip connection 과정을 두번 거쳐서 노드별 임베딩을 도출
+- 노드별 임베딩과 (노드인덱스,노드subject)를 학습해서 노드subject를 예측하는 모델을 구현. 
 <img src='notebook/gnn.png' >
   
