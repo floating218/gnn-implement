@@ -85,4 +85,13 @@ Instance 5:
 ## update
 
 * Last Update Date: 2022/03/
+
+
+## 도식
+
+### Graph convolution layer
+<img src='notebook/conv.png' width=80%>
+
+### Graph Neural Network
+<img src='notebook/gnn.png' width=80%>
   
