@@ -90,8 +90,8 @@ Instance 5:
 ## 도식
 
 ### Graph convolution layer
-<img src='notebook/conv.png' width=90%>
+<img src='notebook/conv.png' >
 
 ### Graph Neural Network
-<img src='notebook/gnn.png' width=90%>
+<img src='notebook/gnn.png' >
   
